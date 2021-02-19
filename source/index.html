@@ -3,13 +3,106 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <meta name="description" content=""/>
+    <title>QSOFT</title>
+    <meta name="description" content="QSOFT - разработка и поддержка интернет-сайтов"/>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
 
   <body class="page-body">
     <header class="page-header">
+      <a class="page-header__logo">
+        <img src="img/logo.svg" width="136" height="31" alt="QSOFT">
+      </a>
+
+      <form class="page-header__search-form search-form" action="https://echo.htmlacademy.ru" method="get">
+        <label class="visually-hidden" for="search-input">Поиск по сайту</label>
+        <input class="search-form__input" type="text" name="search" placeholder="Найти..." id="search-input" required>
+        <button class="visually-hidden" type="submit">Найти</button>
+
+        <svg width="24" height="24" aria-hidden="true" viewbox="0 0 24 24">
+          <use xlink:href="img/sprite.svg#icon-search"></use>
+        </svg>
+      </form>
+
+      <a class="page-header__user" href="#">
+        <p class="page-header__user-name">Константин</p>
+
+        <picture>
+          <source type="image/webp" srcset="img/user@1x.webp 1x, img/user@2x.webp 2x">
+          <img class="page-header__user-photo" src="img/user@1x.jpg" width="40" height="40" srcset="img/user@2x.jpg 2x" alt="Аватар">
+        </picture>
+
+        <svg width="25" height="25" aria-label="Профиль" viewbox="0 0 25 25">
+          <use xlink:href="img/sprite.svg#icon-user"></use>
+        </svg>
+      </a>
     </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">QSOFT - разработка и поддержка интернет-сайтов</h1>
+
+      <section class="partners">
+        <h2 class="partners__title">Наши партнеры</h2>
+
+        <ul class="partners__list">
+          <li class="partners__item">
+            <a class="partners__link" href="#">
+              <picture>
+                <source type="image/webp" srcset="img/henkel@1x.webp 1x, img/henkel@2x.webp 2x">
+                <img class="partners__logo" src="img/henkel@1x.png" width="234" height="64" srcset="img/henkel@2x.png 2x" alt="Henkel">
+              </picture>
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="#">
+              <picture>
+                <source type="image/webp" srcset="img/deere@1x.webp 1x, img/deere@2x.webp 2x">
+                <img class="partners__logo" src="img/deere@1x.png" width="234" height="64" srcset="img/deere@2x.png 2x" alt="John Deere">
+              </picture>
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="#">
+              <picture>
+                <source type="image/webp" srcset="img/mcdonalds@1x.webp 1x, img/mcdonalds@2x.webp 2x">
+                <img class="partners__logo" src="img/mcdonalds@1x.png" width="234" height="64" srcset="img/mcdonalds@2x.png 2x" alt="McDonald's">
+              </picture>
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="#">
+              <picture>
+                <source type="image/webp" srcset="img/ikea@1x.webp 1x, img/ikea@2x.webp 2x">
+                <img class="partners__logo" src="img/ikea@1x.png" width="234" height="64" srcset="img/ikea@2x.png 2x" alt="Ikea">
+              </picture>
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="#">
+              <picture>
+                <source type="image/webp" srcset="img/reebok@1x.webp 1x, img/reebok@2x.webp 2x">
+                <img class="partners__logo" src="img/reebok@1x.png" width="234" height="64" srcset="img/reebok@2x.png 2x" alt="Reebok">
+              </picture>
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="#">
+              <picture>
+                <source type="image/webp" srcset="img/nike@1x.webp 1x, img/nike@2x.webp 2x">
+                <img class="partners__logo" src="img/nike@1x.png" width="234" height="64" srcset="img/nike@2x.png 2x" alt="Nike">
+              </picture>
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="#">
+              <picture>
+                <source type="image/webp" srcset="img/caterpillar@1x.webp 1x, img/caterpillar@2x.webp 2x">
+                <img class="partners__logo" src="img/caterpillar@1x.png" width="234" height="64" srcset="img/caterpillar@2x.png 2x" alt="Caterpillar">
+              </picture>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>
