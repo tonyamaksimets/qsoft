@@ -10,32 +10,34 @@
 
   <body class="page-body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/logo.svg" width="136" height="31" alt="QSOFT">
-      </a>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img src="img/logo.svg" width="136" height="31" alt="QSOFT">
+        </a>
 
-      <form class="page-header__search-form search-form" action="https://echo.htmlacademy.ru" method="get">
-        <label class="visually-hidden" for="search-input">Поиск по сайту</label>
-        <input class="search-form__input" type="text" name="search" placeholder="Найти..." id="search-input" required="">
-        <button class="visually-hidden" type="submit">Найти</button>
+        <form class="page-header__search-form search-form" action="https://echo.htmlacademy.ru" method="get">
+          <label class="visually-hidden" for="search-input">Поиск по сайту</label>
+          <input class="search-form__input" type="text" name="search" placeholder="Найти..." id="search-input" required="">
+          <button class="visually-hidden" type="submit" disabled="">Найти</button>
 
-        <svg width="24" height="24" aria-hidden="true" viewbox="0 0 24 24">
-          <use xlink:href="img/sprite.svg#icon-search"></use>
-        </svg>
-      </form>
+          <svg class="search-form__icon" width="24" height="24" aria-hidden="true" viewbox="0 0 24 24">
+            <use xlink:href="img/sprite.svg#icon-search"></use>
+          </svg>
+        </form>
 
-      <a class="page-header__user" href="#">
-        <p class="page-header__user-name">Константин</p>
+        <a class="page-header__user" href="#">
+          <p class="page-header__user-name">Константин</p>
 
-        <picture>
-          <source type="image/webp" srcset="img/user@1x.webp 1x, img/user@2x.webp 2x">
-          <img class="page-header__user-photo" src="img/user@1x.jpg" width="40" height="40" srcset="img/user@2x.jpg 2x" alt="Аватар">
-        </picture>
+          <picture>
+            <source type="image/webp" srcset="img/user@1x.webp 1x, img/user@2x.webp 2x">
+            <img class="page-header__user-photo" src="img/user@1x.jpg" width="40" height="40" srcset="img/user@2x.jpg 2x" alt="Аватар">
+          </picture>
 
-        <svg width="25" height="25" aria-label="Профиль" viewbox="0 0 25 25">
-          <use xlink:href="img/sprite.svg#icon-user"></use>
-        </svg>
-      </a>
+          <svg class="page-header__icon" width="25" height="25" aria-label="Профиль" viewbox="0 0 25 25">
+            <use xlink:href="img/sprite.svg#icon-user"></use>
+          </svg>
+        </a>
+      </div>
     </header>
 
     <main class="page-main">
@@ -46,7 +48,7 @@
 
         <ul class="partners__list">
           <li class="partners__item">
-            <a class="partners__link" href="#">
+            <a class="partners__link partners__link--grow" href="#">
               <picture>
                 <source type="image/webp" srcset="img/henkel@1x.webp 1x, img/henkel@2x.webp 2x">
                 <img class="partners__logo" src="img/henkel@1x.png" width="234" height="64" srcset="img/henkel@2x.png 2x" alt="Henkel">
@@ -62,7 +64,7 @@
             </a>
           </li>
           <li class="partners__item">
-            <a class="partners__link" href="#">
+            <a class="partners__link partners__link--grow" href="#">
               <picture>
                 <source type="image/webp" srcset="img/mcdonalds@1x.webp 1x, img/mcdonalds@2x.webp 2x">
                 <img class="partners__logo" src="img/mcdonalds@1x.png" width="234" height="64" srcset="img/mcdonalds@2x.png 2x" alt="McDonald's">
@@ -70,7 +72,7 @@
             </a>
           </li>
           <li class="partners__item">
-            <a class="partners__link" href="#">
+            <a class="partners__link partners__link--grow" href="#">
               <picture>
                 <source type="image/webp" srcset="img/ikea@1x.webp 1x, img/ikea@2x.webp 2x">
                 <img class="partners__logo" src="img/ikea@1x.png" width="234" height="64" srcset="img/ikea@2x.png 2x" alt="Ikea">
@@ -86,7 +88,7 @@
             </a>
           </li>
           <li class="partners__item">
-            <a class="partners__link" href="#">
+            <a class="partners__link partners__link--grow" href="#">
               <picture>
                 <source type="image/webp" srcset="img/nike@1x.webp 1x, img/nike@2x.webp 2x">
                 <img class="partners__logo" src="img/nike@1x.png" width="234" height="64" srcset="img/nike@2x.png 2x" alt="Nike">
